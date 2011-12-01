@@ -71,7 +71,7 @@ unzip -j -o ../../../${DEVICE}_update.zip system/lib/libtvout.so -d ../../../ven
 unzip -j -o ../../../${DEVICE}_update.zip system/bin/BCM4330B1_002.001.003.0221.0265.hcd -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/bin/rild -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/bin/tvoutserver -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary
-unzip -j -o ../../../${DEVICE}_update.zip system/cameradata/datapattern_420sp.yuv -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/cameradata/datapattern_420sp.yuv -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary/cameradata
 unzip -j -o ../../../${DEVICE}_update.zip system/cameradata/datapattern_front_420sp.yuv -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary/cameradata
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/egl/libEGL_mali.so -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary/egl
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/egl/libGLES_android.so -d ../../../vendor/$MANUFACTURER/$COMMON/proprietary/egl
@@ -262,10 +262,10 @@ PRODUCT_COPY_FILES += \\
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/alsa.default.so:system/lib/hw/alsa.default.so \\
-    vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/copybit.GT-I9100.so:system/lib/hw/copybit.smdkv310.so \\
-    vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/gps.GT-I9100.so:system/lib/hw/vendor-gps.smdkv310.so \\
+    vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/copybit.smdkv310.so:system/lib/hw/copybit.smdkv310.so \\
+    vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/vendor-gps.smdkv310.so:system/lib/hw/vendor-gps.smdkv310.so \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \\
-    vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/gralloc.GT-I9100.so:system/lib/hw/gralloc.smdkv310.so
+    vendor/__MANUFACTURER__/__COMMON__/proprietary/hw/gralloc.smdkv310.so:system/lib/hw/gralloc.smdkv310.so
 
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__COMMON__/proprietary/keychars/Broadcom_Bluetooth_HID.kcm.bin:system/usr/keychars/Broadcom_Bluetooth_HID.kcm.bin \\
