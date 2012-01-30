@@ -237,7 +237,7 @@ if [ $FIRMWARE = "ZSKI3" -o $FIRMWARE = "UHKI2" -o $FIRMWARE = "XWKI4" ]
 then
     COMMON_HW="$COMMON_HW gps.s5pc210.so"
 else
-    COMMON_HW="$COMMON_HW gps.GT-I9100.so"
+    COMMON_HW="$COMMON_HW gps.smdkv310.so"
 fi
 
 copy_files "$COMMON_HW" "system/lib/hw" "hw"
@@ -254,11 +254,6 @@ copy_files "$COMMON_KEYCHARS" "system/usr/keychars" "keychars"
 COMMON_WIFI="
 	bcm4330_mfg.bin
 	bcm4330_sta.bin
-	nvram_mfg.txt
-	nvram_net.txt
-	nvram_net_02K.txt
-	wifi.conf
-	wpa_supplicant.conf
 	"
 
 if [ $FIRMWARE != "ZNKG5" -a $FIRMWARE != "XWKE7" ]; then
